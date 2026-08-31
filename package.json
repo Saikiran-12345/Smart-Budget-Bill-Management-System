@@ -10,7 +10,8 @@
     "test:watch": "node ./node_modules/vitest/vitest.mjs",
     "lint": "node ./node_modules/typescript/bin/tsc --noEmit",
     "typecheck": "node ./node_modules/typescript/bin/tsc --noEmit",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "start": "vite"
   },
   "dependencies": {
     "lucide-react": "^1.37.0",
