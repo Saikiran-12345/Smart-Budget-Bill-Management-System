@@ -1,0 +1,138 @@
+export interface CountryLivingCostEntry {
+  countryCode: string;
+  countryName: string;
+  capitalCity: string;
+  currencyCode: string;
+  currencySymbol: string;
+  exchangeRateToINR: number;
+  averageMonthlyRent1BHKCenterINR: number;
+  averageMonthlyUtilitiesINR: number;
+  averageMonthlyGroceriesINR: number;
+  averageMonthlyPublicTransitPassINR: number;
+  averageMealInInexpensiveRestaurantINR: number;
+  compositeLivingCostIndexUSD: number; // New York = 100
+  qualityOfLifeRank: number;
+}
+
+export const COUNTRY_LIVING_COST_CATALOG: CountryLivingCostEntry[] = [
+  {
+    countryCode: 'US',
+    countryName: 'United States',
+    capitalCity: 'New York City',
+    currencyCode: 'USD',
+    currencySymbol: '$',
+    exchangeRateToINR: 84.0,
+    averageMonthlyRent1BHKCenterINR: 235000,
+    averageMonthlyUtilitiesINR: 15500,
+    averageMonthlyGroceriesINR: 38000,
+    averageMonthlyPublicTransitPassINR: 11000,
+    averageMealInInexpensiveRestaurantINR: 1800,
+    compositeLivingCostIndexUSD: 100.0,
+    qualityOfLifeRank: 15,
+  },
+  {
+    countryCode: 'UK',
+    countryName: 'United Kingdom',
+    capitalCity: 'London',
+    currencyCode: 'GBP',
+    currencySymbol: '£',
+    exchangeRateToINR: 108.5,
+    averageMonthlyRent1BHKCenterINR: 195000,
+    averageMonthlyUtilitiesINR: 22000,
+    averageMonthlyGroceriesINR: 32000,
+    averageMonthlyPublicTransitPassINR: 16500,
+    averageMealInInexpensiveRestaurantINR: 1600,
+    compositeLivingCostIndexUSD: 88.4,
+    qualityOfLifeRank: 18,
+  },
+  {
+    countryCode: 'SG',
+    countryName: 'Singapore',
+    capitalCity: 'Singapore City',
+    currencyCode: 'SGD',
+    currencySymbol: 'S$',
+    exchangeRateToINR: 63.5,
+    averageMonthlyRent1BHKCenterINR: 215000,
+    averageMonthlyUtilitiesINR: 12000,
+    averageMonthlyGroceriesINR: 31000,
+    averageMonthlyPublicTransitPassINR: 8200,
+    averageMealInInexpensiveRestaurantINR: 850,
+    compositeLivingCostIndexUSD: 91.2,
+    qualityOfLifeRank: 10,
+  },
+  {
+    countryCode: 'AE',
+    countryName: 'United Arab Emirates',
+    capitalCity: 'Dubai',
+    currencyCode: 'AED',
+    currencySymbol: 'AED',
+    exchangeRateToINR: 22.8,
+    averageMonthlyRent1BHKCenterINR: 155000,
+    averageMonthlyUtilitiesINR: 16000,
+    averageMonthlyGroceriesINR: 28000,
+    averageMonthlyPublicTransitPassINR: 7800,
+    averageMealInInexpensiveRestaurantINR: 1100,
+    compositeLivingCostIndexUSD: 72.5,
+    qualityOfLifeRank: 24,
+  },
+  {
+    countryCode: 'DE',
+    countryName: 'Germany',
+    capitalCity: 'Berlin',
+    currencyCode: 'EUR',
+    currencySymbol: '€',
+    exchangeRateToINR: 91.2,
+    averageMonthlyRent1BHKCenterINR: 115000,
+    averageMonthlyUtilitiesINR: 24000,
+    averageMonthlyGroceriesINR: 26000,
+    averageMonthlyPublicTransitPassINR: 7500,
+    averageMealInInexpensiveRestaurantINR: 1200,
+    compositeLivingCostIndexUSD: 68.2,
+    qualityOfLifeRank: 8,
+  },
+  {
+    countryCode: 'CA',
+    countryName: 'Canada',
+    capitalCity: 'Toronto',
+    currencyCode: 'CAD',
+    currencySymbol: 'CA$',
+    exchangeRateToINR: 61.8,
+    averageMonthlyRent1BHKCenterINR: 145000,
+    averageMonthlyUtilitiesINR: 13500,
+    averageMonthlyGroceriesINR: 30000,
+    averageMonthlyPublicTransitPassINR: 9200,
+    averageMealInInexpensiveRestaurantINR: 1400,
+    compositeLivingCostIndexUSD: 74.1,
+    qualityOfLifeRank: 12,
+  },
+  {
+    countryCode: 'AU',
+    countryName: 'Australia',
+    capitalCity: 'Sydney',
+    currencyCode: 'AUD',
+    currencySymbol: 'A$',
+    exchangeRateToINR: 55.4,
+    averageMonthlyRent1BHKCenterINR: 165000,
+    averageMonthlyUtilitiesINR: 14800,
+    averageMonthlyGroceriesINR: 34000,
+    averageMonthlyPublicTransitPassINR: 10500,
+    averageMealInInexpensiveRestaurantINR: 1350,
+    compositeLivingCostIndexUSD: 79.8,
+    qualityOfLifeRank: 5,
+  },
+  {
+    countryCode: 'IN',
+    countryName: 'India',
+    capitalCity: 'New Delhi / Bengaluru',
+    currencyCode: 'INR',
+    currencySymbol: '₹',
+    exchangeRateToINR: 1.0,
+    averageMonthlyRent1BHKCenterINR: 22000,
+    averageMonthlyUtilitiesINR: 3500,
+    averageMonthlyGroceriesINR: 12000,
+    averageMonthlyPublicTransitPassINR: 2000,
+    averageMealInInexpensiveRestaurantINR: 250,
+    compositeLivingCostIndexUSD: 24.5,
+    qualityOfLifeRank: 45,
+  },
+];
